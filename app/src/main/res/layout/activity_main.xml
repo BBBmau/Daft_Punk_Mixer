@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:padding="0dp"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:animationCache="false"
+            android:layout_marginTop="70dp">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="WORK IT"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="MAKE IT"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="DO IT"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="MAKES US"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:animationCache="false">
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="HARDER"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="BETTER"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="FASTER"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="STRONGER"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:animationCache="false"
+            android:layout_marginTop="70dp">
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="MORE THAN"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/button10"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="HOUR"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/button11"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="OUR"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/button12"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="NEVER"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:animationCache="false">
+
+            <Button
+                android:id="@+id/button13"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="EVER"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/button14"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="AFTER"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/button15"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="WORK IS"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/button16"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="OVER"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+
+        </TableRow>
+
+        <!--Pitch Buttons-->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:animationCache="false"
+            android:layout_marginTop="0dp">
+
+            <Button
+                android:id="@+id/pitch1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Pitch 1"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/pitch3"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Pitch 3"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/pitch5"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="pitch 5"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/pitch7"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="pitch 7"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:id="@+id/menu"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="menu"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:animationCache="false"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/pitch2"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="2"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="pitch 2"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/pitch4"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="2"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="pitch 4"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+            <Button
+                android:id="@+id/pitch6"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="2"
+                android:onClick="playMusic"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="pitch 6"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp" />
+
+            <Button
+                android:layout_span="2"
+                android:id="@+id/beat"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="4"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="beat"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:onClick="playMusic"/>
+
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
