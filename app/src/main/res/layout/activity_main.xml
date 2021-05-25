@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:animationCache="false"
-            android:layout_marginTop="70dp">
+            android:layout_marginTop="50dp">
 
             <Button
                 android:id="@+id/button1"
@@ -377,6 +377,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
             android:animationCache="false"
             android:weightSum="10">
 
@@ -425,21 +426,22 @@
                 app:strokeColor="@color/white"
                 app:strokeWidth="3dp" />
 
-            <Button
-                android:layout_span="2"
+            <ToggleButton
                 android:id="@+id/beat"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:textOn="Beat"
+                android:textOff="Beat"
                 android:layout_width="1dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="2dp"
+                android:layout_span="2"
                 android:layout_weight="4"
+                android:checked="false"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
-                android:text="beat"
                 app:strokeColor="@color/white"
-                app:strokeWidth="3dp"
-                android:onClick="playMusic"/>
+                app:strokeWidth="3dp"/>
 
 
         </TableRow>

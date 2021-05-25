@@ -10,15 +10,27 @@ import com.mau.daftpunkmixer.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var daftMusic : MediaPlayer
+    private lateinit var beat: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+
+        binding.beat.setOnCheckedChangeListener { _, isChecked ->
+            if(isChecked){
+                beat = MediaPlayer.create(this,R.raw.beat)
+                beat.start()
+            }
+            else if(beat.isPlaying)
+                beat.stop()
+        }
     }
 
+
     fun playMusic(view: View){
-        val binding = ActivityMainBinding.inflate(layoutInflater)
         val buSelected = view as Button
 
         val daftSnip = when(buSelected.id){
