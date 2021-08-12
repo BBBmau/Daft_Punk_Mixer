@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var beat: MediaPlayer
     private lateinit var binding: ActivityMainBinding
     private lateinit var daftMusic : MediaPlayer
-
+    var pitchIndex = 0;
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -61,8 +61,7 @@ class MainActivity : AppCompatActivity() {
 
     fun pickPitch(view: View){
         val pitchSelected = view as Button
-        var index = viewModel.pitchIndex
-        index = when(pitchSelected.id){
+        pitchIndex = when(pitchSelected.id){
             R.id.pitch1 -> 0
             R.id.pitch2 -> 1
             R.id.pitch3 -> 2
@@ -70,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             R.id.pitch5 -> 4
             R.id.pitch6 -> 5
             R.id.pitch7 -> 6
-            else -> R.raw.harder1
+            else -> 0
         }
     }
 
