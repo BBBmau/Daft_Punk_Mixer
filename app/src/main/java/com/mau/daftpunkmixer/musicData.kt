@@ -1,6 +1,6 @@
 package com.mau.daftpunkmixer
 
-class MusicViewModel{
+ class musicData{
     var after = arrayOf(R.raw.after1, R.raw.after2, R.raw.after3, R.raw.after4, R.raw.after5, R.raw.after6, R.raw.after7)
     var better = arrayOf(R.raw.better1, R.raw.better2, R.raw.better2, R.raw.better4, R.raw.better5, R.raw.better6, R.raw.better7)
     var doit = arrayOf(R.raw.doit1, R.raw.doit2, R.raw.doit2, R.raw.doit4, R.raw.doit5, R.raw.doit6, R.raw.doit7)
@@ -17,5 +17,4 @@ class MusicViewModel{
     var stronger = arrayOf(R.raw.stronger1, R.raw.stronger2, R.raw.stronger2, R.raw.stronger4, R.raw.stronger5, R.raw.stronger6, R.raw.stronger7)
     var workis = arrayOf(R.raw.workis1, R.raw.workis2, R.raw.workis3, R.raw.workis4, R.raw.workis5, R.raw.workis6, R.raw.workis7)
     var workit = arrayOf(R.raw.workit1, R.raw.workit2, R.raw.workit2, R.raw.workit4, R.raw.workit5, R.raw.workit6, R.raw.workit7)
-
 }
