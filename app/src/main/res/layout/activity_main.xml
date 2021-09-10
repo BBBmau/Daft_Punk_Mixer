@@ -365,7 +365,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="2dp"
                 android:layout_weight="1"
-                android:onClick="playMusic"
+                android:onClick="openMenu"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
                 android:text="menu"

@@ -1,7 +1,9 @@
 package com.mau.daftpunkmixer
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -12,11 +14,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var daftMusic : MediaPlayer
     var pitchIndex = 0;
-    val musicData = musicData()
+    private val musicData = musicData()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -28,8 +30,16 @@ class MainActivity : AppCompatActivity() {
             else if(beat.isPlaying)
                 beat.stop()
         }
+
+        registerForContextMenu(binding.root)
     }
 
+    fun openMenu(view: View){
+        val intent = Intent(this, MenuActivity::class.java)
+        Log.i("openMenu","Button is Pressed!")
+        startActivity(intent)
+
+    }
 
     fun playMusic(view: View){
         val buSelected = view as Button
