@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.MobileAds
 import com.mau.daftpunkmixer.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        MobileAds.initialize(this) {}
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
