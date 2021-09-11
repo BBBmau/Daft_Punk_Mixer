@@ -5,7 +5,6 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 
 class MenuActivity : Activity() {
@@ -22,7 +21,8 @@ class MenuActivity : Activity() {
         try {
             startActivity(insta)
         } catch (e: ActivityNotFoundException){
-            Log.i("Instagram Button", "Error")
+            startActivity(Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://instagram.com/master_mau")))
         }
     }
 
